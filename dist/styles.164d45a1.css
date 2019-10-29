@@ -115,6 +115,7 @@ table {
   animation-name: spawn;
   animation-duration: 2s;
   animation-delay: 5s;
+  max-height: 100vh;
 }
 
 header {
@@ -211,6 +212,7 @@ header img, header p.about_text {
   background: rgba(0, 0, 0, 0.5);
   transform: translateY(-105vh);
   display: none;
+  max-height: 100vh;
 }
 .about header .close {
   margin: 10vw;
