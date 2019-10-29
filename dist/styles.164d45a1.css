@@ -278,4 +278,9 @@ header img, header p.about_text {
   width: 100vw;
 }
 
+@font-face {
+  font-family: roboto;
+  src: url(/Roboto-Regular.77b179af.ttf);
+}
+
 /*# sourceMappingURL=/styles.164d45a1.css.map */
