@@ -244,7 +244,7 @@ header img, header p.about_text {
   font-size: 16px;
   font-family: roboto;
   position: absolute;
-  bottom: 25vh;
+  bottom: 30vh;
 }
 .about .div_contact .contact a {
   color: white;
@@ -255,7 +255,7 @@ header img, header p.about_text {
 }
 .about .div_contact .div_reseau {
   position: absolute;
-  bottom: 7vh;
+  bottom: 10vh;
 }
 .about .div_contact .div_reseau .linkedin, .about .div_contact .div_reseau .git, .about .div_contact .div_reseau .dribbble {
   width: 40px;
