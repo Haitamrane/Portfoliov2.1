@@ -1,0 +1,56 @@
+@keyframes progress {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes zoom {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+.div_logo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // none supp
+}
+
+.logo {
+    width: 50vw;
+    margin-bottom: 15%;
+    animation-delay: 4.5s;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+.progress-bar {
+    width: 80vw;
+    height: 1vh;
+    border-radius: 10px;
+    background: rgb(235, 235, 235);
+    animation-delay: 4.5s;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+.progress-bar::before {
+    content: '';
+    animation-name: progress;
+    animation-duration: 5s;
+    display: block;
+    height: 1vh;
+    border-radius: 10px;
+    background: black;
+}
+
+.div_logo--hidden {
+    display: none;
+}

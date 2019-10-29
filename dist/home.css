@@ -1,0 +1,63 @@
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+header img, header p a {
+  margin: 10vw;
+  color: white;
+  font-family: roboto;
+  text-decoration: none;
+}
+
+.div_project-one {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+.div_project-one .img_litionite {
+  position: relative;
+  z-index: -1;
+  margin-left: -35vw;
+}
+.div_project-one .div_call {
+  display: flex;
+  justify-content: center;
+}
+.div_project-one .div_call p {
+  position: absolute;
+  bottom: 23vh;
+}
+.div_project-one .div_call p a {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px 25px 10px 25px;
+  color: white;
+  font-family: roboto;
+  text-decoration: none;
+  font-size: medium;
+}
+.div_project-one .div_call .div_point {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 6vh;
+}
+.div_project-one .div_call .div_point .point {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+.div_project-one .div_call .div_point .point-page {
+  width: 16px;
+  height: 16px;
+  border: solid white 1px;
+  background: none;
+}
+
+/*# sourceMappingURL=/home.css.map */

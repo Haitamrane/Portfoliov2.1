@@ -1,0 +1,89 @@
+@keyframes spawn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.first {
+    animation-name: spawn;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    // None
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+
+    img, p.about_text {
+        margin: 10vw;
+        color: white;
+        font-family: roboto;
+        text-decoration: none;
+    }
+}
+
+.div_project-one {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+
+    .img_litionite {
+        position: relative;
+        z-index: -1;
+        margin-left: -35vw;
+    }
+
+    .div_call {
+        display: flex;
+        justify-content: center;
+
+        p {
+            position: absolute;
+            bottom: 23vh;
+
+            a {
+                border: solid 1px white;
+                border-radius: 5px;
+                padding: 10px 40px 10px 40px;
+                color: white;
+                font-family: roboto;
+                text-decoration: none;
+                font-size: medium;
+            }  
+        }
+
+        .div_point {
+
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 6vh;
+
+            .point {
+                width: 8px;
+                height: 8px;
+                background: white;
+                border-radius: 10px;
+                margin: 20px;
+            }
+
+            .point-page {
+                width: 16px;
+                height: 16px;
+                border: solid white 1px;
+                background: none;
+            }
+            
+        }
+
+    }
+
+}

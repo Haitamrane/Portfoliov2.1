@@ -1,0 +1,271 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes zoom {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.div_logo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 50vw;
+  margin-bottom: 15%;
+  animation-delay: 4.5s;
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+.progress-bar {
+  width: 80vw;
+  height: 1vh;
+  border-radius: 10px;
+  background: #ebebeb;
+  animation-delay: 4.5s;
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+.progress-bar::before {
+  content: "";
+  animation-name: progress;
+  animation-duration: 5s;
+  display: block;
+  height: 1vh;
+  border-radius: 10px;
+  background: black;
+}
+
+.div_logo--hidden {
+  display: none;
+}
+
+@keyframes spawn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.first {
+  animation-name: spawn;
+  animation-duration: 2s;
+  animation-delay: 5s;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+header img, header p.about_text {
+  margin: 10vw;
+  color: white;
+  font-family: roboto;
+  text-decoration: none;
+}
+
+.div_project-one {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+.div_project-one .img_litionite {
+  position: relative;
+  z-index: -1;
+  margin-left: -35vw;
+}
+.div_project-one .div_call {
+  display: flex;
+  justify-content: center;
+}
+.div_project-one .div_call p {
+  position: absolute;
+  bottom: 23vh;
+}
+.div_project-one .div_call p a {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px 40px 10px 40px;
+  color: white;
+  font-family: roboto;
+  text-decoration: none;
+  font-size: medium;
+}
+.div_project-one .div_call .div_point {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 6vh;
+}
+.div_project-one .div_call .div_point .point {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+.div_project-one .div_call .div_point .point-page {
+  width: 16px;
+  height: 16px;
+  border: solid white 1px;
+  background: none;
+}
+
+@keyframes fond {
+  0% {
+    transform: translate(-9vh);
+  }
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(-9vh);
+  }
+}
+@keyframes open {
+  0% {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+.about {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateY(-105vh);
+  display: none;
+}
+.about header .close {
+  margin: 10vw;
+  color: white;
+  font-family: roboto;
+}
+.about .hello {
+  font-size: 16px;
+  font-family: roboto;
+  color: white;
+  line-height: 150%;
+  margin-right: 10vw;
+  position: absolute;
+  top: 23vh;
+  left: 10vw;
+}
+.about .hello::before {
+  content: "Hello,";
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  line-height: 240%;
+}
+.about .div_contact {
+  display: flex;
+  justify-content: center;
+}
+.about .div_contact .contact {
+  font-size: 16px;
+  font-family: roboto;
+  position: absolute;
+  bottom: 25vh;
+}
+.about .div_contact .contact a {
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px 40px 10px 40px;
+}
+.about .div_contact .div_reseau {
+  position: absolute;
+  bottom: 7vh;
+}
+.about .div_contact .div_reseau .linkedin, .about .div_contact .div_reseau .git, .about .div_contact .div_reseau .dribbble {
+  width: 40px;
+}
+.about .div_contact .div_reseau .git {
+  margin: 0 30px 0 30px;
+}
+.about img.fond_about {
+  animation: fond 20s infinite;
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+}
+
+.about--open {
+  display: block;
+  animation: open 1s forwards;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
