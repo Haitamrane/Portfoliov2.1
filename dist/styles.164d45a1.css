@@ -179,6 +179,14 @@ header img, header p.about_text {
   background: none;
 }
 
+.div_project-one--hidden {
+  display: none;
+}
+
+.div_project-one--open {
+  display: block;
+}
+
 @keyframes fond {
   0% {
     transform: translate(-9vh);

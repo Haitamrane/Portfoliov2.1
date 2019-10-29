@@ -5,6 +5,7 @@ setInterval(remove, 5300);
 
     function remove(){
         loading.classList.add("div_logo--hidden");
+        home.classList.add("div_project-one--open");
     };
 //
 
@@ -19,3 +20,11 @@ about.addEventListener("click", function(){
 close.addEventListener("click", function(){
     open.classList.remove("about--open");
 });
+
+let home = document.querySelector('.div_project-one');
+
+setInterval(homedelete, 100);
+
+function homedelete() {
+    home.classList.add("div_project-one--hidden");
+};
